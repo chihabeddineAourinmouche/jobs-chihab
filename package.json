@@ -1,0 +1,33 @@
+{
+  "name": "my_app",
+  "version": "1.0.0",
+  "description": "my first nodeJs app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Chihab",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "bootstrap": "^3.3.7",
+    "cool-ascii-faces": "1.3.4",
+    "e": "0.0.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "mongojs": "^2.4.1",
+    "node-dom": "^0.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chihabeddineAourinmouche/jobs-chihab.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/chihabeddineAourinmouche/jobs-chihab/issues"
+  },
+  "homepage": "https://github.com/chihabeddineAourinmouche/jobs-chihab#readme"
+}
