@@ -33,7 +33,7 @@ app.get('/:tag', (req, res) => {
 	});
 	if(docs.length > 0){
 		res.render('index', {
-			top_title: 'Check out available job offers! Total(' + db.length + ')',
+			top_title: 'Check out available job offers! Total(' + docs.length + ')',
 			jobs: docs
 		});
 	}else{
