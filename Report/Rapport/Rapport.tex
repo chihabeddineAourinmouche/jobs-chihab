@@ -1,0 +1,62 @@
+\documentclass[french]{article}
+
+\usepackage{lipsum}
+\usepackage[margin = 1in, includefoot]{geometry}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[R]{\thepage}
+\usepackage{tabto}
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\huge{\bfseries Report\\Job Portal Web Application}
+			\line(1,0){300}\\
+			\vspace{0.25in}
+			\textsc{\LARGE Chihabeddine AOURINMOUCHE\\}
+			\vspace{12cm}
+		\end{center}
+		\begin{flushright}
+			\textsc{\LARGE Chihabeddine A.\\
+			3rd year IT\\
+			\#21507412\\
+			December the 1st\\}
+		\end{flushright}
+	\end{titlepage}
+	
+	\tableofcontents
+	\vspace{0.25cm}
+	
+	\begin{center}
+		\line(1,0){350}
+	\end{center}
+	
+	\section{Introduction:}
+		This document represents a description of a job portal web application that I have been working as part of an internship assignment by Eckovation.
+		
+		In this report, I will also include a user manual as to how to use the application as being the final product.
+		
+	\section{Project description:}
+		The objective of this project is to build, from scratch, a web application that lists job offers that are stored in a database. The app should then allow reading data from a database and render it to a HTML5 web page using various techniques such as Bootstrap.
+		
+	\section{Creating and deploying the web app:}
+		First, I started by reading documentation about the different techniques available out there. Django and NodeJS were some of the immediate choices I had as they are very popular and easier to learn and use.
+		
+		I began making the application using Django, Jinja2, and MySQL. Although I finished the app using these techniques, I decided to start over using NodeJS, EJS, and JSON, for I liked working with JavaScript better.
+		
+		Using NodeJS, as for most web applications made in NodeJS, the server is created first, which allows node to locally run the app on the browser. To make it more interesting, I created an html page and EJS template that gets an array of objects through express and creates content according to the results of the query.
+		
+		Deploying the app was the task that took most of the process time. I had to test several web hosting/deployment services such as AWS, Digital Ocean, PythonAnyWhere, Evennode, Heroku... It took my so much time to learn about app deployment, requirements and techniques. I have finally settled down on Heroku to get my app online through this link:
+		\vspace{0.25cm}
+		
+		https://jobs-chihab-sqlite3.herokuapp.com/
+		
+	\section{How to navigate:}
+		Once the user enters the link provided above, they are presented with a webpage containing a search bar. The button on the right of it submits the query to only show jobs whose tags match the searched tag, whereas the button to its left shows the entire database.
+		
+		Below, there is a list of job offers, a click on any of the titles show a collapsing surface with information such as the description and the date the offer was published on. a click on "contact info" will show a collapsing surface with contact information about the job offering company such as the phone number, email, and the address that the user can use to make their application.
+\end{document}
